@@ -140,7 +140,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "me.yuki.folk"
+        applicationId = "me.hex.org"
         minSdk = androidMinSdkVersion
         targetSdk = androidTargetSdkVersion
         versionCode = managerVersionCode
