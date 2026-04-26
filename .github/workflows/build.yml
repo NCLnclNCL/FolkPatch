@@ -12,7 +12,7 @@ on:
       build_type:
         description: 'Build type'
         required: true
-        default: 'both'
+        default: 'release'
         type: choice
         options: [ both, debug, release ]
 
