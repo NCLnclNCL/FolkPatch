@@ -14,7 +14,7 @@ use serde::{Deserialize, Serialize};
 use crate::defs;
 
 const DEFAULT_SCONTEXT: &str = "u:r:untrusted_app:s0";
-const MAGISK_SCONTEXT: &str = "u:r:magisk:s0";
+const MAGISK_SCONTEXT: &str = "u:r:hex:s0";
 
 #[derive(Deserialize, Serialize, Clone)]
 pub struct PackageConfig {
