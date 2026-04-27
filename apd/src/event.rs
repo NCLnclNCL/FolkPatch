@@ -119,7 +119,7 @@ pub fn on_post_data_fs(superkey: Option<String>) -> Result<()> {
 
     init_load_su_path(&superkey);
 
-    let mut sepol = get_policy_main(&["magiskpolicy".to_string(), "--live".to_string()])?;
+    let mut sepol = get_policy_main(&["magiskpolicy".to_string()])?;
     sepol.magisk_rules();
     sepol
         .to_file("/sys/fs/selinux/load")
