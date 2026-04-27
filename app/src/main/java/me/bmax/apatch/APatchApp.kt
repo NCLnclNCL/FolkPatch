@@ -211,8 +211,8 @@ class APApplication : Application(), Thread.UncaughtExceptionHandler, ImageLoade
                 "echo ${Version.getManagerVersion().second} > $APATCH_VERSION_PATH",
                 "restorecon -R $APATCH_FOLDER",
 
-                "${nativeDir}/libmagiskpolicy.so --magisk --live",
-            )
+                "${nativeDir}/libmagiskpolicy.so --magisk",
+    --magisk--magisk        )
 
             val shell = getRootShell()
             shell.newJob().add(*cmds).to(logCallback, logCallback).exec()
